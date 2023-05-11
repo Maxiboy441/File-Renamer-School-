@@ -23,6 +23,7 @@ namespace DateiRenamer
         public MainWindow()
         {
             InitializeComponent();
+            //this is a test
         }
     }
 }
