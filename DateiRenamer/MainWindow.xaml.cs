@@ -23,7 +23,10 @@ namespace DateiRenamer
         public MainWindow()
         {
             InitializeComponent();
+<<<<<<< HEAD
             //this is a test
+=======
+>>>>>>> parent of efa739f (TestCommit)
         }
     }
 }
