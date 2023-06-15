@@ -381,6 +381,19 @@
             "related": ".xml"
           }
         }
+      },
+      "files/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NUnit": "3.13.3"
+        },
+        "compile": {
+          "bin/placeholder/files.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/files.dll": {}
+        }
       }
     }
   },
@@ -975,6 +988,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "files/1.0.0": {
+      "type": "project",
+      "path": "../files/files.csproj",
+      "msbuildProject": "../files/files.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -983,7 +1001,8 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
-      "coverlet.collector >= 3.2.0"
+      "coverlet.collector >= 3.2.0",
+      "files >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1011,7 +1030,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj": {
+              "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

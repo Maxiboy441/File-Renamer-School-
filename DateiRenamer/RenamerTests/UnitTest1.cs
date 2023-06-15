@@ -1,5 +1,4 @@
 ﻿
-
 [TestFixture]
 public class FileRenamerTests
 {
