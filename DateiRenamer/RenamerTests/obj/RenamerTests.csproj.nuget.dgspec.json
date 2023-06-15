@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj": {}
+    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj": {}
   },
   "projects": {
-    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj": {
+    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj",
-        "projectName": "files",
-        "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj",
+        "projectUniqueName": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj",
+        "projectName": "RenamerTests",
+        "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj",
         "packagesPath": "/Users/mhuber/.nuget/packages/",
-        "outputPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/",
+        "outputPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mhuber/.nuget/NuGet/NuGet.Config"
@@ -39,9 +39,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [

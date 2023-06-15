@@ -1,0 +1,5 @@
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/Debug/net7.0/RenamerTests.csproj.AssemblyReference.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/Debug/net7.0/RenamerTests.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/Debug/net7.0/RenamerTests.AssemblyInfoInputs.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/Debug/net7.0/RenamerTests.AssemblyInfo.cs
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/Debug/net7.0/RenamerTests.csproj.CoreCompileInputs.cache

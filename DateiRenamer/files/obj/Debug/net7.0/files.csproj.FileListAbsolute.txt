@@ -13,3 +13,5 @@
 /Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.pdb
 /Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.genruntimeconfig.cache
 /Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/ref/files.dll
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/nunit.framework.dll
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.csproj.CopyComplete

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{E2A69EC3-FE8E-4D08-B74A-A90090B0A836}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="files/Program.cs">
+    <Files>
+      <File FileName="files/Program.cs" Line="18" Column="1" />
+      <File FileName="files/FileRenamer.cs" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="files" expanded="True">
+            <Node name="files" expanded="True">
+              <Node name="testFiles" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.files PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RenamerTests FirstBuild="True" />
+</Properties>
