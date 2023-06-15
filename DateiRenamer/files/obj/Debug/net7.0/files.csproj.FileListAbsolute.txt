@@ -1,0 +1,15 @@
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/files
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/files.deps.json
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/files.runtimeconfig.json
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/files.dll
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/bin/Debug/net7.0/files.pdb
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.csproj.AssemblyReference.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.AssemblyInfoInputs.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.AssemblyInfo.cs
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.csproj.CoreCompileInputs.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.dll
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/refint/files.dll
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.pdb
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/files.genruntimeconfig.cache
+/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/Debug/net7.0/ref/files.dll
