@@ -69,7 +69,6 @@ public class FileRenamer
         }
 
         string[] files = Directory.GetFiles(folderPath);
-
         foreach (string filePath in files)
         {
             string fileName = Path.GetFileName(filePath);
@@ -89,5 +88,12 @@ public class FileRenamer
                 }
             }
         }
+
+        string[] subfolders = Directory.GetDirectories(folderPath);
+        foreach (string subfolder in subfolders)
+        {
+            ChangePrefixOfFilesInFolder(subfolder, currentPrefix, newPrefix);
+        }
     }
+
 }
