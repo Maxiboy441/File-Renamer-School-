@@ -30,6 +30,7 @@ public class FileRenamer
         Console.WriteLine($"File '{fileName}' renamed to '{Path.GetFileName(newFilePath)}'.");
     }
 
+    //bonus Feaure
     public void RenameFilesInFolder(string folderPath, string newPrefix)
     {
         if (!Directory.Exists(folderPath))
