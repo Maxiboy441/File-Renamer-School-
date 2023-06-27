@@ -1,25 +1,30 @@
 ﻿<Properties StartupConfiguration="{E2A69EC3-FE8E-4D08-B74A-A90090B0A836}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="files/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.files PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RenamerTests/UnitTest1.cs">
     <Files>
-      <File FileName="files/Program.cs" Line="18" Column="1" />
-      <File FileName="files/FileRenamer.cs" Line="29" Column="1" />
+      <File FileName="files/Program.cs" />
+      <File FileName="files/FileRenamer.cs" Line="2" Column="2" />
+      <File FileName="RenamerTests/UnitTest1.cs" Line="43" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="files" expanded="True">
-            <Node name="files" expanded="True">
-              <Node name="testFiles" expanded="True" />
+            <Node name="files" expanded="True" />
+            <Node name="RenamerTests" expanded="True">
+              <Node name="Dependencies" expanded="True" selected="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.ItemProperties.files PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.RenamerTests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

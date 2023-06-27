@@ -1,4 +1,7 @@
-﻿public class FileRenamer
+﻿using System;
+using System.IO;
+
+public class FileRenamer
 {
     public void RenameFile(string absoluteFilePath, string newName)
     {
@@ -25,5 +28,66 @@
 
         File.Move(absoluteFilePath, newFilePath);
         Console.WriteLine($"File '{fileName}' renamed to '{Path.GetFileName(newFilePath)}'.");
+    }
+
+    public void RenameFilesInFolder(string folderPath, string newPrefix)
+    {
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine("Folder does not exist.");
+            return;
+        }
+
+        string[] files = Directory.GetFiles(folderPath);
+        int counter = 1;
+
+        foreach (string filePath in files)
+        {
+            string fileName = Path.GetFileName(filePath);
+            string newFileName = $"{newPrefix}{counter}{Path.GetExtension(fileName)}";
+
+            try
+            {
+                RenameFile(filePath, newFileName);
+                Console.WriteLine($"Renamed file: {fileName} to {newFileName}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error renaming file: {fileName}. {ex.Message}");
+            }
+
+            counter++;
+        }
+    }
+
+    public void ChangePrefixOfFilesInFolder(string folderPath, string currentPrefix, string newPrefix)
+    {
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine("Folder does not exist.");
+            return;
+        }
+
+        string[] files = Directory.GetFiles(folderPath);
+
+        foreach (string filePath in files)
+        {
+            string fileName = Path.GetFileName(filePath);
+
+            if (fileName.StartsWith(currentPrefix))
+            {
+                string newFileName = newPrefix + fileName.Substring(currentPrefix.Length);
+
+                try
+                {
+                    RenameFile(filePath, newFileName);
+                    Console.WriteLine($"Renamed file: {fileName} to {newFileName}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error renaming file: {fileName}. {ex.Message}");
+                }
+            }
+        }
     }
 }

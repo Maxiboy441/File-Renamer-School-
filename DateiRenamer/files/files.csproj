@@ -11,4 +11,10 @@
     <PackageReference Include="NUnit" Version="3.13.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="testFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="testFiles\" />
+  </ItemGroup>
 </Project>
