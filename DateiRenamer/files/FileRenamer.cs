@@ -121,7 +121,7 @@ public class FileRenamer
 
                 for (int i = 0; i < newfileName.Length; i++)
                 {
-                    if (newfileName[i] == '!')
+                    if (newfileName[i] == '*')
                     {
                         newfileName[i] = '-';
                         break;
