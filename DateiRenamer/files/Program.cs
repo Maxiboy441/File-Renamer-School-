@@ -6,9 +6,10 @@ public class Programm
     public static void Main()
     {
         FileRenamer renamer = new FileRenamer();
-        string absoluteFilePath = @"/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/testFiles/testfile.txt";
-        string newName = "haus";
-        renamer.RenameFile(absoluteFilePath, newName);
+        string FilePath = @"/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/testFiles";
+        renamer.ChangePrefixOfFilesInFolder(FilePath, "test", "haus");
+
+        renamer.RenameFile(FilePath + "/max.txt", "maus");
 
 
         Console.ReadKey();

@@ -76,8 +76,11 @@ public class FileRenamer
 
             if (fileName.StartsWith(currentPrefix))
             {
-                string newFileName = newPrefix + fileName.Substring(currentPrefix.Length);
+                string extension = Path.GetExtension(filePath);
+                string NOTnewFileName = newPrefix + fileName.Substring(currentPrefix.Length);
 
+                string newFileName = NOTnewFileName.Replace(extension, string.Empty);
+                Console.WriteLine(newFileName);
                 try
                 {
                     RenameFile(filePath, newFileName);
