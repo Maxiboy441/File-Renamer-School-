@@ -96,4 +96,78 @@ public class FileRenamer
         }
     }
 
+
+    public void ChangefirstStar(string folderPath)
+    {
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine("Folder does not exist.");
+            return;
+        }
+        string[] files = Directory.GetFiles(folderPath);
+
+        foreach (string filePath in files)
+        {
+            string fileName = Path.GetFileName(filePath);
+
+            try
+            {
+
+                char[] newfileName = fileName.ToCharArray();
+
+                for (int i = 0; i < newfileName.Length; i++)
+                {
+                    if (newfileName[i] == '!')
+                    {
+                        newfileName[i] = '-';
+                        break;
+                    }
+
+                }
+
+                Console.Write("Neuer Name: ");
+                Console.WriteLine(newfileName);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error renaming file: {fileName}. {ex.Message}");
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// ZahlenBlock aufteilen
+    /// </summary>
+    /// <param name="folderPath"></param>
+
+    public void ZahlenblokAufteilen(string folderPath)
+    {
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine("Folder does not exist.");
+            return;
+
+        }
+
+        string[] files = Directory.GetFiles(folderPath);
+
+        foreach (string filePath in files)
+        {
+            string fileName = Path.GetFileName(filePath);
+
+            try
+            {
+                string datum = $"{fileName.Substring(0, 2)}-{fileName.Substring(2, 2)}-{fileName.Substring(4, 4)}{fileName.Substring(8)}";
+
+                Console.Write("Neuer Name: ");
+                Console.WriteLine(datum);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error renaming file: {fileName}. {ex.Message}");
+            }
+        }
+    }
+
 }
