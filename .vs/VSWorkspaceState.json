@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\DateiRenamer",
-    "\\DateiRenamer\\files"
+    "\\DateiRenamer\\files",
+    "\\DateiRenamer\\RenamerTests"
   ],
+  "SelectedNode": "\\DateiRenamer\\RenamerTests\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }

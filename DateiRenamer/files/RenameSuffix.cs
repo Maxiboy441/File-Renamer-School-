@@ -53,8 +53,6 @@ public class RenameSuffix
                 string originalFileName = Path.GetFileName(fileOld);
                 string originalFileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileOld);
 
-                Console.WriteLine(fileOld);
-
                 string newFilePath = Path.Combine(DirectoryPath, originalFileNameWithoutExtension + "." + NewSuffix);
 
                 if (File.Exists(newFilePath))
