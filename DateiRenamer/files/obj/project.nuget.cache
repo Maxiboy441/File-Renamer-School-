@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x5X1pG7pP/m/G74sPndU4qSb4kjqR9Amcxiwed4Kk8V4aHbGpGMFcE/4gpBYTH8rzddthI2paQ2P73xzS7UwiQ==",
+  "dgSpecHash": "LtLiB2ZG+E1mWLEAVJ4o2kDieO/ugOmJCx8XN35c13D2JtU9r+M1dJubNEOC3apKrCxHKHswHGEKkrSvKTT9JQ==",
   "success": true,
-  "projectFilePath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj",
+  "projectFilePath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj",
   "expectedPackageFiles": [
-    "/Users/mhuber/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/mhuber/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
-    "/Users/mhuber/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512"
+    "C:\\Users\\veronika\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\veronika\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\veronika\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512"
   ],
   "logs": []
 }

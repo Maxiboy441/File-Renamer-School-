@@ -1,17 +1,14 @@
 ﻿using System;
 using System.IO;
 
-public class Programm
+class Programm
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
-        FileRenamer renamer = new FileRenamer();
-        string absoluteFilePath = @"/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/testFiles/testfile.txt";
-        string newName = "haus";
-        renamer.RenameFile(absoluteFilePath, newName);
+        RenameSuffix renamer = new RenameSuffix();
+        renamer.execute();
 
-
-        Console.ReadKey();
+        Console.ReadLine();
     }
 }
-    
+

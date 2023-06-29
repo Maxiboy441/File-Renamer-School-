@@ -72,6 +72,7 @@ public class FileRenamer
         foreach (string filePath in files)
         {
             string fileName = Path.GetFileName(filePath);
+            Console.WriteLine(fileName);
 
             if (fileName.StartsWith(currentPrefix))
             {
