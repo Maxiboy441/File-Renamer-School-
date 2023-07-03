@@ -5,13 +5,10 @@ public class Programm
 {
     public static void Main()
     {
-        FileRenamer renamer = new FileRenamer();
-        string absoluteFilePath = @"/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/testFiles/testfile.txt";
-        string newName = "haus";
-        renamer.RenameFile(absoluteFilePath, newName);
+        RenumberRenamer renamer = new RenumberRenamer();
+        renamer.execute("\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\Files");
 
-
-        Console.ReadKey();
+        Console.ReadLine();
     }
 }
     
