@@ -15,13 +15,13 @@ public class RenameSuffixTest
 
     private string TestDirectoryPath = "";
 
-    private Rename
+    private RenameSuffix Renamer;
 
     [SetUp]
     public void Setup()
     {
+        RenameSuffix Renamer = new RenameSuffix();
 
-        RenameSuffix renamer = new RenameSuffix();
         TestDirectoryPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "TestDirectory");
         Directory.CreateDirectory(TestDirectoryPath);
 
@@ -50,7 +50,7 @@ public class RenameSuffixTest
         string renamedFilePath2 = Path.Combine(TestDirectoryPath, NewFileName2);
 
         // Act
-        renamer.changeSuffix(TestDirectoryPath, OriginalFileSuffix, NewFileSuffix);
+        Renamer.changeSuffix(TestDirectoryPath, OriginalFileSuffix, NewFileSuffix);
 
         // Assert
         Assert.IsFalse(File.Exists(originalFilePath1), "Original file 1 should not exist");
@@ -68,7 +68,7 @@ public class RenameSuffixTest
         string newName = "NewName";
 
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => fileRenamer.RenameFile(absoluteFilePath, newName));
+        Assert.Throws<ArgumentException>(() => Renamer.RenameFile(absoluteFilePath, newName));
     }
 
     [Test]
@@ -79,6 +79,6 @@ public class RenameSuffixTest
         string newName = "NewName";
 
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => fileRenamer.RenameFile(absoluteFilePath, newName));
+        Assert.Throws<ArgumentException>(() => Renamer.RenameFile(absoluteFilePath, newName));
     }
 }
