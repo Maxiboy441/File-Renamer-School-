@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics.Metrics;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 public class RenameSuffix
 {
@@ -46,6 +48,7 @@ public class RenameSuffix
         Console.WriteLine("---");
 
         //Umbenennen der Files
+        int counter = 0;
         foreach (string fileOld in Directory.GetFiles(DirectoryPath))
         {
             if (OriginalSuffix == "n" || fileOld.EndsWith(OriginalSuffix))
@@ -59,13 +62,37 @@ public class RenameSuffix
                 {
                     throw new InvalidOperationException($"A file with the name '{originalFileNameWithoutExtension}' and suffix '{NewSuffix}' already exists.");
                 }
-
-                File.Move(fileOld, newFilePath);
+             
+                moveFile(fileOld, newFilePath);
+                
                 Console.WriteLine($"The file '{originalFileName}' renamed to '{Path.GetFileName(newFilePath)}'.");
+                
+                counter++;
             }
         }
 
-        Console.WriteLine();
-        Console.WriteLine("Executed!");
+        if (counter != 0)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Executed!");
+        }
+        else 
+        { 
+            Console.WriteLine($"No file with the suffix '{OriginalSuffix}' found."); 
+        }
+
+
+    }
+
+    private void moveFile(string fileOld, string newFilePath)
+    {
+        try
+        {
+            File.Move(fileOld, newFilePath);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error renaming file: {fileOld}. {ex.Message}");
+        }
     }
 }
