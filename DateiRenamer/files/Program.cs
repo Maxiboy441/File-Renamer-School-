@@ -48,10 +48,12 @@ public class Programm
         {
             case "1":
                 FileRenamer renamer = new FileRenamer();
-                Console.WriteLine("Provide a absolute Path of the file");
-                string absoluteFilePath = Console.ReadLine();
-                Console.WriteLine("What is the new filename (without extension)");
-                string newName = Console.ReadLine();
+                string[] questions = new string[] { "Provide an absolute path of the file", "What is the new filename (without extension)" };
+                string[] answers = (string[])aksQuestions(questions);
+
+                string absoluteFilePath = answers[0];
+
+                string newName = answers[1];
 
                 if (absoluteFilePath == "" | newName == "")
                 {
@@ -63,16 +65,18 @@ public class Programm
                 }
                 break;
 
-
             case "2":
                 FileRenamer renamer2 = new FileRenamer();
-                Console.WriteLine("Provide a Path to the folder (or * to get a folder in current directory)");
-                string PathToFolder = Console.ReadLine();
+
+                string[] questions2 = new string[] { "Provide a Path to the folder (or * to get a folder in current directory)", "What is the old präfix" , "What is the new präfix" };
+                string[] answers2 = (string[])aksQuestions(questions2);
+
+                string PathToFolder = answers2[0];
                 PathToFolder = currentIdentifier(PathToFolder);
-                Console.WriteLine("What is the old präfix");
-                string oldPräfix = Console.ReadLine();
-                Console.WriteLine("What is the new präfix");
-                string newPräfix = Console.ReadLine();
+
+                string oldPräfix = answers2[1];
+
+                string newPräfix = answers2[2]; 
 
                 if (PathToFolder == "" | newPräfix == "" | oldPräfix == "")
                 {
@@ -83,10 +87,15 @@ public class Programm
                     renamer2.ChangePrefixOfFilesInFolder(PathToFolder, oldPräfix, newPräfix);
                 }
                 break;
+
             case "3":
                 FileRenamer renamer3 = new FileRenamer();
-                Console.WriteLine("Provide a Path to the folder");
-                string PathToFolder2 = Console.ReadLine();
+
+                string[] questions3 = new string[] { "Provide a Path to the folder" };
+                string[] answers3 = (string[])aksQuestions(questions3);
+
+                string PathToFolder2 = answers3[0];
+
                 PathToFolder2 = currentIdentifier(PathToFolder2);
                 if (PathToFolder2 == "")
                 {
@@ -97,10 +106,14 @@ public class Programm
                     renamer3.ChangefirstStar(PathToFolder2);
                 }
                 break;
+
             case "4":
                 FileRenamer renamer4 = new FileRenamer();
-                Console.WriteLine("Provide a Path to the folder");
-                string PathToFolder3 = Console.ReadLine();
+                string[] questions4 = new string[] { "Provide a Path to the folder" };
+                string[] answers4 = (string[])aksQuestions(questions4);
+
+                string PathToFolder3 = answers4[0];
+
                 PathToFolder3 = currentIdentifier(PathToFolder3);
                 if (PathToFolder3 == "")
                 {
@@ -111,6 +124,7 @@ public class Programm
                     renamer4.ChangefirstStar(PathToFolder3);
                 }
                 break;
+
             default:
                 Console.WriteLine("Please choose a valide option");
                 selection();
@@ -145,6 +159,28 @@ public class Programm
         }
 
         return path;
+    }
+
+    public static string aksQuestion(string question)
+    {
+        Console.WriteLine(question);
+        string text = Console.ReadLine();
+
+        return text;
+    }
+
+    public static Array aksQuestions(string[] questions)
+    {
+        string[] answers = new string[questions.Length];
+        int count = 0;
+
+        foreach (string question in questions)
+        {
+            answers[count] = aksQuestion(question);
+            count++;
+        }
+
+        return answers;
     }
 }
     
