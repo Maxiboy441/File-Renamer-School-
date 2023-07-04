@@ -147,6 +147,8 @@ public class FileRenamer
     /// ZahlenBlock aufteilen
     /// </summary>
     /// <param name="folderPath"></param>
+    /// 
+    // die zahlen block aufteilen
 
     public void ZahlenblokAufteilen(string folderPath)
     {
@@ -184,7 +186,7 @@ public class FileRenamer
         }
     }
 
-
+    // die zahlen verschieben
     public void ZahlenVerschieben(string folderPath)
     {
 
@@ -228,6 +230,7 @@ public class FileRenamer
 
 
     }
+
 
 
 }
