@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\RenamerTests\\RenamerTests.csproj": {}
+    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj": {
+    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj",
+        "projectUniqueName": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj",
         "projectName": "files",
-        "projectPath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj",
-        "packagesPath": "C:\\Users\\veronika\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\obj\\",
+        "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj",
+        "packagesPath": "/Users/mhuber/.nuget/packages/",
+        "outputPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\veronika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/mhuber/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,40 +60,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\RenamerTests\\RenamerTests.csproj": {
+    "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\RenamerTests\\RenamerTests.csproj",
+        "projectUniqueName": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj",
         "projectName": "RenamerTests",
-        "projectPath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\RenamerTests\\RenamerTests.csproj",
-        "packagesPath": "C:\\Users\\veronika\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\RenamerTests\\obj\\",
+        "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/RenamerTests.csproj",
+        "packagesPath": "/Users/mhuber/.nuget/packages/",
+        "outputPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/RenamerTests/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\veronika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/mhuber/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\FileRenamer\\E1FI5-DateiRenamer\\DateiRenamer\\files\\files.csproj"
+              "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj": {
+                "projectPath": "/Volumes/data/Berufsschule/E1FI5-DateiRenamer/DateiRenamer/files/files.csproj"
               }
             }
           }
@@ -150,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }
