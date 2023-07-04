@@ -36,8 +36,10 @@ public class Programm
         Console.WriteLine("[1]Change name of a single file");
         Console.WriteLine("[2]Change präfix of all file in a directory");
         Console.WriteLine("[3]Change all stars in filenames of a folder into dashes");
-        Console.WriteLine("[4]Fix dataformating for all files in a folder");
-        Console.WriteLine("[4]Change sufix of all file in a directory [WIP]");
+        Console.WriteLine("[4]Replace starts");
+        //Console.WriteLine("[4]Change sufix of all file in a directory [WIP]");
+        Console.WriteLine("[5]Fix dataformating for all files in a folder");
+        Console.WriteLine("[6]Put präfix behind numbers");
     }
 
     public static void selection()
@@ -122,6 +124,41 @@ public class Programm
                 else
                 {
                     renamer4.ChangefirstStar(PathToFolder3);
+                }
+                break;
+
+            case "5":
+                FileRenamer renamer5 = new FileRenamer();
+                string[] questions5 = new string[] { "Provide a Path to the folder" };
+                string[] answers5 = (string[])aksQuestions(questions5);
+
+                string PathToFolder4 = answers5[0];
+
+                PathToFolder4 = currentIdentifier(PathToFolder4);
+                if (PathToFolder4 == "")
+                {
+                    Console.WriteLine("Please provide valide data");
+                }
+                else
+                {
+                    renamer5.ZahlenblokAufteilen(PathToFolder4);
+                }
+                break;
+            case "6":
+                FileRenamer renamer6 = new FileRenamer();
+                string[] questions6 = new string[] { "Provide a Path to the folder" };
+                string[] answers6 = (string[])aksQuestions(questions6);
+
+                string PathToFolder5 = answers6[0];
+
+                PathToFolder5 = currentIdentifier(PathToFolder5);
+                if (PathToFolder5 == "")
+                {
+                    Console.WriteLine("Please provide valide data");
+                }
+                else
+                {
+                    renamer6.ZahlenVerschieben(PathToFolder5);
                 }
                 break;
 
