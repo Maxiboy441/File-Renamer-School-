@@ -23,13 +23,13 @@ public class Programm
     public static void Start()
     {
         Console.WriteLine("############################################################################################");
-        Console.WriteLine("    FFFFFF  I  L       EEEEE  RRRRRR  EEEEE   N       N  AAAAAA  M       M  EEEE  RRRRRR    ");
-        Console.WriteLine("    F       I  L       E      R    R  E       N  N    N  A    A  M  M   MM  E     R    R    ");
-        Console.WriteLine("    FFFFF   I  L       E      R    R  E       N    N  N  A    A  M   M M M  E     R    R    ");
-        Console.WriteLine("    F       I  L       EEEEE  RRRRRR  EEEEE   N     N N  AAAAAA  M    M  M  EEEE  RRRRRR    ");
-        Console.WriteLine("    F       I  L       E      R  R    E       N      NN  A    A  M       M  E     R  R      ");
-        Console.WriteLine("    F       I  L       E      R   R   E       N       N  A    A  M       M  E     R   R     ");
-        Console.WriteLine("    F       I  LLLL    EEEEE  R    R  EEEEE   N       N  A    A  M       M  EEEE  R    R    ");
+        Console.WriteLine("    FFFFFF  I  L      EEEEE  RRRRRR  EEEEE  NN      N  AAAAAA  M        M  EEEEE  RRRRRR    ");
+        Console.WriteLine("    F       I  L      E      R    R  E      N  N    N  A    A  M  M   M M  E      R    R    ");
+        Console.WriteLine("    FFFFF   I  L      E      R    R  E      N    N  N  A    A  M   M M  M  E      R    R    ");
+        Console.WriteLine("    F       I  L      EEEEE  RRRRRR  EEEEE  N     N N  AAAAAA  M    M   M  EEEEE  RRRRRR    ");
+        Console.WriteLine("    F       I  L      E      R  R    E      N      NN  A    A  M        M  E      R  R      ");
+        Console.WriteLine("    F       I  L      E      R   R   E      N       N  A    A  M        M  E      R   R     ");
+        Console.WriteLine("    F       I  LLLLL  EEEEE  R    R  EEEEE  N       N  A    A  M        M  EEEEE  R    R    ");
         Console.WriteLine("############################################################################################");
 
         Console.WriteLine("Was möchstes du tun?");
