@@ -110,20 +110,27 @@ public class FileRenamer
         {
             string fileName = Path.GetFileName(filePath);
 
+            char[] newfileName = fileName.ToCharArray();
+
             try
             {
-
-                char[] newfileName = fileName.ToCharArray();
-
                 for (int i = 0; i < newfileName.Length; i++)
                 {
                     if (newfileName[i] == '!')
                     {
                         newfileName[i] = '-';
+
                         break;
                     }
 
                 }
+
+                string newName = new string(newfileName);
+
+                string newFilePath = Path.Combine(folderPath, newName);
+
+                // Datei umbenennen
+                File.Move(filePath, newFilePath);
 
                 Console.Write("Neuer Name: ");
                 Console.WriteLine(newfileName);
@@ -160,8 +167,15 @@ public class FileRenamer
             {
                 string datum = $"{fileName.Substring(0, 2)}-{fileName.Substring(2, 2)}-{fileName.Substring(4, 4)}{fileName.Substring(8)}";
 
+                // Neuen Dateinamen zusammenstellen
+                string newFilePath = Path.Combine(folderPath, datum);
+
+                // Datei umbenennen
+                File.Move(filePath, newFilePath);
+
                 Console.Write("Neuer Name: ");
                 Console.WriteLine(datum);
+
             }
             catch (Exception ex)
             {
@@ -169,5 +183,51 @@ public class FileRenamer
             }
         }
     }
+
+
+    public void ZahlenVerschieben(string folderPath)
+    {
+
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine("Folder does not exist.");
+            return;
+
+        }
+
+        string[] files = Directory.GetFiles(folderPath);
+
+        foreach (string filePath in files)
+        {
+            string fileName = Path.GetFileName(filePath);
+
+            try
+            {
+                string img = fileName.Split('-')[0]; // output : img
+                string stringZahl = fileName.Split('-')[1]; //output: 123.jpg
+                string zahlen = stringZahl.Split(".")[0];  //output : 123
+                string jpg = stringZahl.Split(".")[1]; //output: jpg
+
+                string newName = $"{zahlen}-{img}.{jpg}";
+
+
+                string newFilePath = Path.Combine(folderPath, newName);
+
+                File.Move(filePath, newFilePath);
+
+                Console.Write("Neuer Name: ");
+                Console.WriteLine(newName);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error renaming file: {fileName}. {ex.Message}");
+            }
+        }
+
+
+
+    }
+
 
 }
