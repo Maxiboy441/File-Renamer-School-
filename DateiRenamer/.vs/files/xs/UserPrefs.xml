@@ -1,16 +1,10 @@
 ﻿<Properties StartupConfiguration="{E2A69EC3-FE8E-4D08-B74A-A90090B0A836}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.files PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="files/FileRenamer.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="files/Program.cs">
     <Files>
-      <File FileName="files/Program.cs" />
-      <File FileName="files/FileRenamer.cs" Line="64" Column="6" />
-      <File FileName="RenamerTests/UnitTest1.cs" Line="94" Column="47" />
+      <File FileName="files/Program.cs" Line="9" Column="21" />
+      <File FileName="files/FileRenamer.cs" Line="148" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +12,7 @@
           <Node name="files" expanded="True">
             <Node name="files" expanded="True">
               <Node name="testFiles" expanded="True" />
-              <Node name="FileRenamer.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="RenamerTests" expanded="True" />
           </Node>
@@ -31,4 +25,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

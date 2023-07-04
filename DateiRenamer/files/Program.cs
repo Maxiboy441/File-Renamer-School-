@@ -66,8 +66,9 @@ public class Programm
 
             case "2":
                 FileRenamer renamer2 = new FileRenamer();
-                Console.WriteLine("Provide a Path to the folder");
+                Console.WriteLine("Provide a Path to the folder (or * to get a folder in current directory)");
                 string PathToFolder = Console.ReadLine();
+                PathToFolder = currentIdentifier(PathToFolder);
                 Console.WriteLine("What is the old präfix");
                 string oldPräfix = Console.ReadLine();
                 Console.WriteLine("What is the new präfix");
@@ -86,6 +87,7 @@ public class Programm
                 FileRenamer renamer3 = new FileRenamer();
                 Console.WriteLine("Provide a Path to the folder");
                 string PathToFolder2 = Console.ReadLine();
+                PathToFolder2 = currentIdentifier(PathToFolder2);
                 if (PathToFolder2 == "")
                 {
                     Console.WriteLine("Please provide valide data");
@@ -99,6 +101,7 @@ public class Programm
                 FileRenamer renamer4 = new FileRenamer();
                 Console.WriteLine("Provide a Path to the folder");
                 string PathToFolder3 = Console.ReadLine();
+                PathToFolder3 = currentIdentifier(PathToFolder3);
                 if (PathToFolder3 == "")
                 {
                     Console.WriteLine("Please provide valide data");
@@ -113,6 +116,35 @@ public class Programm
                 selection();
                 break;
         }
+    }
+
+
+    public static string currentDir()
+    {
+        string currentDirectory = Directory.GetCurrentDirectory();
+        string pathCurrent = Directory.GetParent(Directory.GetParent(Directory.GetParent(currentDirectory).FullName).FullName).FullName;
+
+        Console.WriteLine("Give me the name of the folder in the current directory");
+        string pathOfFolderInCurrent = Console.ReadLine();
+        string pathInCurrent = pathCurrent + "/" + pathOfFolderInCurrent;
+        return pathInCurrent;
+    }
+
+    public static string currentIdentifier(string input)
+    {
+        string path = "";
+
+        if(input == "*")
+        {
+            path = currentDir();
+            Console.WriteLine(path);
+        }
+        else
+        {
+            path = input;
+        }
+
+        return path;
     }
 }
     
