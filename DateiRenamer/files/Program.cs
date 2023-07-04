@@ -5,10 +5,10 @@ public class Programm
 {
     public static void Main()
     {
-<<<<<<< HEAD
-        RenumberRenamer renamer = new RenumberRenamer();
-        renamer.execute("\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\Files");
-=======
+
+        //RenumberRenamer renamer = new RenumberRenamer();
+        //renamer.execute("\\\\Mac\\Home\\Documents\\Ausbildung\\Schule\\BFK-S\\Projekt\\Files");
+
         Start();
         selection();
         
@@ -19,7 +19,6 @@ public class Programm
         //renamer.ChangePrefixOfFilesInFolder(FilePath, "test", "haus");
         //
         //renamer.RenameFile(FilePath + "/max.txt", "maus");
->>>>>>> save-Max
 
         Console.ReadLine();
     }
@@ -41,9 +40,9 @@ public class Programm
         Console.WriteLine("[2]Change präfix of all file in a directory");
         Console.WriteLine("[3]Change all stars in filenames of a folder into dashes");
         Console.WriteLine("[4]Replace starts");
-        //Console.WriteLine("[4]Change sufix of all file in a directory [WIP]");
         Console.WriteLine("[5]Fix dataformating for all files in a folder");
         Console.WriteLine("[6]Put präfix behind numbers");
+        Console.WriteLine("[7]RenumberRenamer");
     }
 
     public static void selection()
@@ -163,6 +162,24 @@ public class Programm
                 else
                 {
                     renamer6.ZahlenVerschieben(PathToFolder5);
+                }
+                break;
+
+            case "7":
+                RenumberRenamer renamer7 = new RenumberRenamer();
+                string[] questions7 = new string[] { "Provide a Path to the folder"};
+                string[] answers7 = (string[])aksQuestions(questions7);
+
+                string PathToFolder6 = answers7[0];
+
+                PathToFolder5 = currentIdentifier(PathToFolder6);
+                if (PathToFolder6 == "")
+                {
+                    Console.WriteLine("Please provide valide data");
+                }
+                else
+                {
+                    renamer7.execute(PathToFolder6);
                 }
                 break;
 
