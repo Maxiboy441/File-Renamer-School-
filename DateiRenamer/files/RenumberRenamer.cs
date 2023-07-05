@@ -4,6 +4,7 @@ public class RenumberRenamer
 {
     private string newFileName;
     private string newFilePath;
+    private int renameCounter = 0;
 
     public void execute(string DirectoryPath)
     {
@@ -23,7 +24,15 @@ public class RenumberRenamer
         }
 
         Console.WriteLine();
-        Console.WriteLine("Executed!");
+
+        if (renameCounter > 0)
+        {
+            Console.WriteLine("Executed!");
+        } 
+        else
+        {
+            Console.WriteLine("No changes needed!");
+        }
     }
 
     private void rename(string DirectoryPath,string originalFileName, int fileNumber)
@@ -43,6 +52,8 @@ public class RenumberRenamer
 
             moveFile(originalFilePath, newFilePath);
             Console.WriteLine($"The file '{originalFileName}' was renamed to '{newFileName}'.");
+
+            renameCounter++;
         }
     }
 
