@@ -47,6 +47,7 @@ public class Programm
         Console.WriteLine("[5] Fix dataformating for all files in a folder");
         Console.WriteLine("[6] Put präfix behind numbers");
         Console.WriteLine("[7] Renumber filename");
+        Console.WriteLine("[8] Rename suffix");
 
         Console.WriteLine();
 
@@ -190,6 +191,12 @@ public class Programm
                     renamer7.execute(PathToFolder6);
                 }
                 break;
+
+            case "8":
+                RenameSuffix renamer8 = new RenameSuffix();
+                renamer8.execute();
+                break;
+
 
             default:
                 Console.WriteLine("Please choose a valide option: ");

@@ -20,7 +20,7 @@ public class RenameSuffix
 
     private string getPath()
     {
-        Console.WriteLine("Please enter Directory Path of the files to change:");
+        Console.WriteLine("Provide a path to the folder:");
         return Console.ReadLine();
     }
 
@@ -32,7 +32,7 @@ public class RenameSuffix
 
     private string getNewSuffix()
     {
-        Console.WriteLine("Please enter Suffix new:");
+        Console.WriteLine("Please enter new Suffix:");
         return Console.ReadLine();
     }
 
