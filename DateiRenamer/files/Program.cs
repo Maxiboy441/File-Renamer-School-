@@ -148,6 +148,7 @@ public class Programm
                     renamer5.ZahlenblokAufteilen(PathToFolder4);
                 }
                 break;
+
             case "6":
                 FileRenamer renamer6 = new FileRenamer();
                 string[] questions6 = new string[] { "Provide a path to the folder: "};

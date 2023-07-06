@@ -32,3 +32,11 @@
 \\Mac\Home\Documents\Ausbildung\Schule\BFK-S\Projekt\FileRenamer\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.csproj.CopyComplete
 \\Mac\Home\Documents\Ausbildung\Schule\BFK-S\Projekt\FileRenamer\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.genruntimeconfig.cache
 \\Mac\Home\Documents\Ausbildung\Schule\BFK-S\Projekt\FileRenamer\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\ref\files.dll
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.csproj.AssemblyReference.cache
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.AssemblyInfoInputs.cache
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.AssemblyInfo.cs
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.csproj.CoreCompileInputs.cache
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.dll
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\refint\files.dll
+C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\files\obj\Debug\net7.0\files.pdb

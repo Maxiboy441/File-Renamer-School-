@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RenamerTests
-build_property.ProjectDir = \\Mac\Home\Documents\Ausbildung\Schule\BFK-S\Projekt\FileRenamer\E1FI5-DateiRenamer\DateiRenamer\RenamerTests\
+build_property.ProjectDir = C:\Users\ac140429\source\repos\E1FI5-DateiRenamer\DateiRenamer\RenamerTests\
