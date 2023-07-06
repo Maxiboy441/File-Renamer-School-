@@ -34,8 +34,8 @@ public class Programm
         Console.WriteLine("What would you like to do?");
         Console.WriteLine("[1] Change name of a single file");
         Console.WriteLine("[2] Change präfix of all file in a directory");
-        Console.WriteLine("[3] Change all stars in filenames of a folder into dashes");
-        Console.WriteLine("[4] Replace stars");
+        //Console.WriteLine("[3] Change all stars in filenames of a folder into dashes");
+        Console.WriteLine("[4] Replace first exclamation mark with hyphen");
         Console.WriteLine("[5] Fix dataformating for all files in a folder");
         Console.WriteLine("[6] Put präfix behind numbers");
         Console.WriteLine("[7] Renumber filename");
@@ -94,7 +94,7 @@ public class Programm
                 }
                 break;
 
-            case "3":
+            /*case "3":
                 FileRenamer renamer3 = new FileRenamer();
 
                 string[] questions3 = new string[] { "Provide a path to the folder: " };
@@ -111,7 +111,7 @@ public class Programm
                 {
                     renamer3.ChangefirstStar(PathToFolder2);
                 }
-                break;
+                break; */
 
             case "4":
                 FileRenamer renamer4 = new FileRenamer();
@@ -127,7 +127,7 @@ public class Programm
                 }
                 else
                 {
-                    renamer4.ChangefirstStar(PathToFolder3);
+                    renamer4.ChangefirstExclamationMark(PathToFolder3);
                 }
                 break;
 

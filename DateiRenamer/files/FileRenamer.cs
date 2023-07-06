@@ -102,7 +102,7 @@ public class FileRenamer
     }
 
 
-    public void ChangefirstStar(string folderPath)
+    public void ChangefirstExclamationMark(string folderPath)
     {
         if (!Directory.Exists(folderPath))
         {
@@ -121,7 +121,7 @@ public class FileRenamer
             {
                 for (int i = 0; i < newfileName.Length; i++)
                 {
-                    if (newfileName[i] == '*')
+                    if (newfileName[i] == '!')
                     {
                         newfileName[i] = '-';
 
