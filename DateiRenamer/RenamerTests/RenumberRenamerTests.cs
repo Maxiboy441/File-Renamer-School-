@@ -6,14 +6,19 @@ public class RenumberRenamerTests
     string path3 = "";
     string path4 = "";
     string path5 = "";
-
     string newPath1 = "";
     string newPath2 = "";
     string newPath3 = "";
     string newPath4 = "";
     string newPath5 = "";
 
+    string subPath1 = "";
+    string subPath2 = "";
+    string newSubPath1 = "";
+    string newSubPath2 = "";
+
     private string TestDirectoryPath;
+    private string SubTestDirectoryPath;
     private RenumberRenamer renumberRenamer;
 
     [SetUp]
@@ -39,6 +44,20 @@ public class RenumberRenamerTests
         newPath3 = Path.Combine(TestDirectoryPath, "4-img.txt");
         newPath4 = Path.Combine(TestDirectoryPath, "5-img.txt");
         newPath5 = Path.Combine(TestDirectoryPath, "2-img.txt");
+
+        //subdirectory
+        SubTestDirectoryPath = Path.Combine(TestDirectoryPath, "SubTestDirectory");
+        Directory.CreateDirectory(SubTestDirectoryPath);
+
+        subPath1 = Path.Combine(SubTestDirectoryPath, "6-img.txt");
+        subPath2 = Path.Combine(SubTestDirectoryPath, "9-img.txt");
+
+        File.WriteAllText(subPath1, "Text");
+        File.WriteAllText(subPath2, "Text");
+
+        newSubPath1 = Path.Combine(SubTestDirectoryPath, "1-img.txt");
+        newSubPath2 = Path.Combine(SubTestDirectoryPath, "2-img.txt");
+
 
         renumberRenamer = new RenumberRenamer();
     }
@@ -91,6 +110,12 @@ public class RenumberRenamerTests
 
         Assert.IsFalse(File.Exists(path5), "Original file 5 should not exist");
         Assert.IsTrue(File.Exists(newPath5), "Renamed file 5 should exist");
+
+        Assert.IsFalse(File.Exists(subPath1), "Original file 1 (sub) should not exist");
+        Assert.IsTrue(File.Exists(newSubPath1), "Renamed file 1 (sub) should exist");
+
+        Assert.IsFalse(File.Exists(subPath2), "Original file 2 (sub) should not exist");
+        Assert.IsTrue(File.Exists(newSubPath2), "Renamed file 2 (sub) should exist");
     }
 
 }

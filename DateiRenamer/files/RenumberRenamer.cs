@@ -25,6 +25,12 @@ public class RenumberRenamer
 
         Console.WriteLine();
 
+        //check for subdirectories and rename rekursiv
+        foreach (string subdirectoryPath in Directory.GetDirectories(DirectoryPath))
+        {
+            execute(subdirectoryPath);
+        }
+
         if (renameCounter > 0)
         {
             Console.WriteLine("Executed!");

@@ -8,8 +8,10 @@ public class Programm
         printFileRenamer();
 
         selectRenamer();
+        
         executeSelection();
 
+        Console.WriteLine("Push any key to exit");
         Console.ReadLine();
     }
 
