@@ -44,7 +44,7 @@ public class Programm
         Console.WriteLine();
 
         Console.Write("Enter option: ");
-    }
+    }   
 
     public static void executeSelection()
     {
@@ -171,22 +171,37 @@ public class Programm
                 string[] questions7 = new string[] { "Provide a path to the folder: "};
                 string[] answers7 = (string[])aksQuestions(questions7);
 
-                string PathToFolder6 = answers7[0];
+                string PathToFolder7 = answers7[0];
 
-                PathToFolder5 = currentIdentifier(PathToFolder6);
-                if (PathToFolder6 == "")
+                PathToFolder7 = currentIdentifier(PathToFolder7);
+                if (PathToFolder7 == "")
                 {
                     Console.WriteLine("Please provide valide data: ");
                 }
                 else
                 {
-                    renamer7.execute(PathToFolder6);
+                    renamer7.execute(PathToFolder7);
                 }
                 break;
 
             case "8":
                 RenameSuffix renamer8 = new RenameSuffix();
-                renamer8.execute();
+                string[] questions8 = new string[] { "Provide a path to the folder: ", "Please enter the old suffix", "Please enter the new suffix" };
+                string[] answers8 = (string[])aksQuestions(questions8);
+
+                string PathToFolder8 = answers8[0];
+                string originalSuffix = answers8[1];
+                string newSuffix = answers8[2];
+
+                PathToFolder5 = currentIdentifier(PathToFolder8);
+                if (PathToFolder8 == "")
+                {
+                    Console.WriteLine("Please provide valide data: ");
+                }
+                else
+                {
+                    renamer8.changeSuffix(PathToFolder8, originalSuffix, newSuffix);
+                }
                 break;
 
 
