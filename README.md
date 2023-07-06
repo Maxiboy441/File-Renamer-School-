@@ -2,7 +2,7 @@
 Projekt zur Umbenennung von Dateien
 
 # Klarnamen 
-Maxiboy441 = Maximilian Horst August Huber/Holme
-Atifa = Atefe Ahmadi
-AmirHassanMojahed = Amir Hassan Mojahed
-veronikaITS = Veronika Wolff
+Maxiboy441 = Maximilian Horst August Huber/Holme   
+Atifa = Atefe Ahmadi   
+AmirHassanMojahed = Amir Hassan Mojahed   
+veronikaITS = Veronika Wolff   
