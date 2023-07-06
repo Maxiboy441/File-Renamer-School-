@@ -73,6 +73,7 @@ public class FileRenamer
         foreach (string filePath in files)
         {
             string fileName = Path.GetFileName(filePath);
+            Console.WriteLine(fileName);
 
             if (fileName.StartsWith(currentPrefix))
             {
@@ -101,7 +102,7 @@ public class FileRenamer
     }
 
 
-    public void ChangefirstStar(string folderPath)
+    public void ChangefirstExclamationMark(string folderPath)
     {
         if (!Directory.Exists(folderPath))
         {
@@ -120,7 +121,7 @@ public class FileRenamer
             {
                 for (int i = 0; i < newfileName.Length; i++)
                 {
-                    if (newfileName[i] == '*')
+                    if (newfileName[i] == '!')
                     {
                         newfileName[i] = '-';
 
@@ -231,10 +232,5 @@ public class FileRenamer
             }
         }
 
-
-
     }
-
-
-
 }

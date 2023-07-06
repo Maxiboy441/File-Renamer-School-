@@ -1,16 +1,10 @@
 {
   "ExpandedNodes": [
-<<<<<<< HEAD
     "",
     "\\DateiRenamer",
     "\\DateiRenamer\\files",
     "\\DateiRenamer\\RenamerTests"
   ],
-  "SelectedNode": "\\DateiRenamer\\files\\RenumberRenamer.cs",
-=======
-    ""
-  ],
-  "SelectedNode": "\\files.sln",
->>>>>>> save-Max
+  "SelectedNode": "\\DateiRenamer\\files\\RenameSuffix.cs",
   "PreviewInSolutionExplorer": false
 }
