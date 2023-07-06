@@ -10,14 +10,6 @@ public class Programm
         selectRenamer();
         executeSelection();
 
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-
-        selectRenamer();
-        executeSelection();
-
         Console.ReadLine();
     }
 
@@ -43,7 +35,7 @@ public class Programm
         Console.WriteLine("[1] Change name of a single file");
         Console.WriteLine("[2] Change präfix of all file in a directory");
         Console.WriteLine("[3] Change all stars in filenames of a folder into dashes");
-        Console.WriteLine("[4] Replace starts");
+        Console.WriteLine("[4] Replace stars");
         Console.WriteLine("[5] Fix dataformating for all files in a folder");
         Console.WriteLine("[6] Put präfix behind numbers");
         Console.WriteLine("[7] Renumber filename");
@@ -256,4 +248,3 @@ public class Programm
         return answers;
     }
 }
-    
