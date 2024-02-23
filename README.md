@@ -20,4 +20,4 @@ Specify the license under which your project is distributed. For example, you ca
 
 - [Maximilian Huber (Maxiboy441)](https://github.com/Maxiboy441)
   [![Support me on ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-%23FF5E5B)](https://ko-fi.com/maxiboy)
-- [Veronika Wolff]([https://github.com/veronikaITS])
+- [Veronika Wolff](https://github.com/veronikaITS)
